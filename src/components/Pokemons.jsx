@@ -92,9 +92,9 @@ const Pokemons = () => {
   const handleTypeChange = (e) => {
     const selectedType = e.target.value;
     setSelectedType(selectedType);
-    setSelectedAbility(""); // Limpiar la habilidad seleccionada al seleccionar un tipo
-    setPokemonName(""); // Limpiar el nombre de búsqueda al seleccionar un tipo
-    // Filtrar los Pokémon por tipo seleccionado
+    setSelectedAbility(""); 
+    setPokemonName(""); 
+    
     axios
       .get(`https://pokeapi.co/api/v2/type/${selectedType}`)
       .then(({ data }) => setAllPokemons(data.pokemon.map(p => p.pokemon)))
@@ -104,9 +104,9 @@ const Pokemons = () => {
   const handleAbilityChange = (e) => {
     const selectedAbility = e.target.value;
     setSelectedAbility(selectedAbility);
-    setSelectedType(""); // Limpiar el tipo seleccionado al seleccionar una habilidad
-    setPokemonName(""); // Limpiar el nombre de búsqueda al seleccionar una habilidad
-    // Filtrar los Pokémon por habilidad seleccionada
+    setSelectedType(""); 
+    setPokemonName(""); 
+    
     axios
       .get(`https://pokeapi.co/api/v2/ability/${selectedAbility}`)
       .then(({ data }) => setAllPokemons(data.pokemon.map(p => p.pokemon)))
@@ -119,19 +119,19 @@ const Pokemons = () => {
   };
 
   useEffect(() => {
-    // Obtener tipos de Pokémon
+    
     axios
       .get(`https://pokeapi.co/api/v2/type`)
       .then(({ data }) => setTypes(data.results))
       .catch((err) => console.log(err));
 
-    // Obtener habilidades de Pokémon
+   
     axios
       .get(`https://pokeapi.co/api/v2/ability`)
       .then(({ data }) => setAbilities(data.results))
       .catch((err) => console.log(err));
 
-    // Obtener primer lote de Pokémon al cargar la página
+    
     axios
       .get(`https://pokeapi.co/api/v2/pokemon?limit=${INITIAL_LIMIT}&offset=${(currentPage - 1) * INITIAL_LIMIT}`)
       .then(({ data }) => setAllPokemons(data.results))

@@ -16,7 +16,7 @@ const Aside = ({ pokemon, isLoading }) => {
         }`}
       >
         <header className="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-[70%] scale-90">
-          <img src="/no-pokemon-selected.png" alt="" />
+          <img src="./images/no-pokemon-selected.png" alt="" />
         </header>
 
         <span className="aside-text ext-lg px-20">
@@ -28,7 +28,7 @@ const Aside = ({ pokemon, isLoading }) => {
       <div className="w-[60px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
         <img
           className="contrast-100 animate-spin-slow"
-          src="/pokeball.png"
+          src="./images/pokeball.png"
           alt=""
         />
       </div>
