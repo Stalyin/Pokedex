@@ -33,7 +33,7 @@ function Welcome({ onNameSubmit }) {
   };
 
   const playSound = () => {
-    audioRef.current = new Audio('./click-sound.mp3');
+    audioRef.current = new Audio('./images/click-sound.mp3');
     audioRef.current.play();
   };
 

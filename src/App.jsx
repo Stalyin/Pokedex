@@ -73,7 +73,7 @@ function App() {
 
       <footer className="footer">
         <div className='footer-logo'>
-          <img src="/./images/pokemons.png" alt="Pokemons" />
+          <img src="./images/pokemons.png" alt="Pokemons" />
         </div>
         <div className='footer-info'>
           <ul>
