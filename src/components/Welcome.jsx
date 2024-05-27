@@ -68,7 +68,7 @@ function Welcome({ onNameSubmit }) {
           {error && <p className="error">{error}</p>}
         </div>
         <div>
-          <img src="../public/pokemon.gif" alt="" />
+          <img src="../images/pokemon.gif" alt="" />
         </div>
       </div>
       {showWelcomeMessage && (
