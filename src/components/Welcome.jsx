@@ -33,7 +33,7 @@ function Welcome({ onNameSubmit }) {
   };
 
   const playSound = () => {
-    audioRef.current = new Audio('/click-sound.mp3');
+    audioRef.current = new Audio('public/click-sound.mp3');
     audioRef.current.play();
   };
 
@@ -68,7 +68,7 @@ function Welcome({ onNameSubmit }) {
           {error && <p className="error">{error}</p>}
         </div>
         <div>
-          <img src="/public/pokemon.gif" alt="" />
+          <img src="public/pokemon.gif" alt="" />
         </div>
       </div>
       {showWelcomeMessage && (
