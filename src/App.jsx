@@ -32,7 +32,7 @@ function App() {
     <section className="container-ft">
       <header className='banner'>
         <div className='banner-logo'>
-          <img className='logo' src="/images/logo.png" alt="Logo" />
+          <img className='logo' src="./images/logo.png" alt="Logo" />
           <div className='hamburger-menu' onClick={toggleMenu}>
           <div></div>
           <div></div>
@@ -50,7 +50,7 @@ function App() {
         </div>
       
         <div className='banner-img2'>
-          <img className='banner-img' src="/images/banner.png" alt="Banner" />
+          <img className='banner-img' src="./images/banner.png" alt="Banner" />
         </div>
       </header>
 
@@ -73,7 +73,7 @@ function App() {
 
       <footer className="footer">
         <div className='footer-logo'>
-          <img src="//images/pokemons.png" alt="Pokemons" />
+          <img src="/./images/pokemons.png" alt="Pokemons" />
         </div>
         <div className='footer-info'>
           <ul>
@@ -116,7 +116,7 @@ function App() {
           <a href="https://github.com/Stalyin" target='blank'><box-icon type='logo' name='github' color="white"></box-icon></a>
           <a href="https://wa.me/+593963313195?text=Hola%21%20vengo%20de%20Pokedex" target='blank'><box-icon type='logo' name='whatsapp'  color="white"></box-icon></a>
         </div>
-        <img className='mobile-footer' src="/images/banner.png" alt="Mobile Footer" />
+        <img className='mobile-footer' src="./images/banner.png" alt="Mobile Footer" />
       </footer>
     </section>
   );
